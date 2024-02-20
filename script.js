@@ -1,4 +1,4 @@
-const text = "aki.github.io";
+const text = "0akiro.github.io";
 const speed = 100;
 const delay = 1000;
 const textElement = document.getElementById('text');
