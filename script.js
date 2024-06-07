@@ -24,7 +24,7 @@ function backspace(index = text.length - 1) {
 type();
 
 document.getElementById('image').addEventListener('click', function() {
-  const audio = new Audio('sounds/scream.mp3');
+  const audio = new Audio('sounds/nya.mp3');
   audio.play();
 });
 
