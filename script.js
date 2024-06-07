@@ -28,16 +28,14 @@ document.getElementById('image').addEventListener('click', function() {
   audio.play();
 });
 
-// Play the welcome music when the page loads
 window.onload = function() {
   const welcomeMusic = document.getElementById('welcomeMusic');
   const mainMusic = document.getElementById('mainMusic');
   
   welcomeMusic.play();
   
-  // After welcome music finishes, play the main music
   welcomeMusic.onended = function() {
-    mainMusic.loop = true; // Set main music to loop
+    mainMusic.loop = true; 
     mainMusic.play();
   };
 };
