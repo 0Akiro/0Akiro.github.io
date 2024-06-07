@@ -20,7 +20,7 @@
       font-size: 24px;
       margin-bottom: 20px;
       display: inline-block;
-      width: 300px; /* Set a fixed width for the typing area */
+      width: 300px; 
     }
 
     #commandSymbol {
@@ -31,7 +31,7 @@
       text-align: center;
       margin-bottom: 20px;
       position: relative;
-      animation: pulse 1s infinite alternate; /* Adjust the duration of the pulse animation */
+      animation: pulse 1s infinite alternate; 
     }
 
     @keyframes pulse {
@@ -39,7 +39,7 @@
         transform: scale(1);
       }
       50% {
-        transform: scale(1.2); /* Increase the scale for pulsating effect */
+        transform: scale(1.2); 
       }
       100% {
         transform: scale(1);
@@ -72,10 +72,11 @@
       margin-bottom: 5px;
     }
 
-    .japanese-text {
-      font-family: 'Arial Black', sans-serif; /* Use a thick font */
-      font-size: 36px; /* Increase the font size */
-      margin-top: 30px; /* Add more margin-top for more space */
+    .welcome-text {
+      font-family: 'Arial Black', sans-serif; 
+      font-size: 36px; 
+      margin-top: 30px; 
+      color: crimson;
     }
 
     /* Hide audio controls */
@@ -85,11 +86,11 @@
   </style>
 </head>
 <body>
-  <!-- Add the welcome music audio element -->
+
   <audio id="welcomeMusic" src="sounds/welcome.mp3" preload="auto"></audio>
-  <!-- Add the main music audio element -->
+
   <audio id="mainMusic" src="sounds/main.mp3" preload="auto"></audio>
-  <!-- Add the scream audio element -->
+
   <audio id="screamAudio" src="sounds/scream.mp3" preload="auto"></audio>
 
   <div id="typedText">
@@ -112,7 +113,7 @@
     </a>
   </div>
 
-  <div class="japanese-text">こんにちは、秋です。</div>
+  <div class="welcome-text">こんにちは、秋です。</div>
 
   <script src="script.js"></script>
 </body>
