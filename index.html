@@ -122,7 +122,6 @@
 
   <div class="welcome-text">こんにちは、ㇾノ秋です。</div>
   <script>
-    // Function to request audio permission and handle playback
     function requestAudioPermission() {
       if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
         navigator.mediaDevices.getUserMedia({ audio: true })
@@ -140,14 +139,12 @@
       }
     }
 
-    // Function to play autoplay sounds
     function playAutoplaySounds() {
       document.getElementById('welcomeMusic').play();
       document.getElementById('mainMusic').play();
       document.getElementById('screamAudio').play();
     }
 
-    // Request audio permission when the page loads
     window.addEventListener('load', requestAudioPermission);
   </script>
   <script src="script.js"></script>
